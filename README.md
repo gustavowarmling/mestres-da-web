@@ -59,4 +59,23 @@ Aplicação desenvolvida para participar do processo seletivo da empresa Mestres
 
 **DEL** /products/:id
 
+**POST** /users
+```sh
+{
+     "name": "",
+     "email": "",
+     "password": ""
+}
+```
+
+**POST** /sessions
+- Retorna o token Bearer necessário para as rotas POST / PUT / DELETE de products
+```sh
+{
+     "email": "",
+     "password": ""
+}
+```
+
+
 *Espero que gostem da aplicação, agradeço a oportunidade e o contato!*
