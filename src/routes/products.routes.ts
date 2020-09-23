@@ -9,6 +9,8 @@ import ensureAuthenticated from '../middlewares/ensureAuthenticated';
 
 const productsRouter = Router();
 
+productsRouter.use(ensureAuthenticated);
+
 productsRouter.get('/', async (request, response) => {
   const productsRepository = getRepository('products');
 
@@ -45,7 +47,7 @@ productsRouter.get('/:id', async (request, response) => {
   return response.json(products);
 });
 
-productsRouter.post('/', ensureAuthenticated, async (request, response) => {
+productsRouter.post('/', async (request, response) => {
   try {
     const { name, description, size, price, quantity, sku } = request.body;
 
@@ -71,7 +73,7 @@ productsRouter.post('/', ensureAuthenticated, async (request, response) => {
   }
 });
 
-productsRouter.put('/:id', ensureAuthenticated, async (request, response) => {
+productsRouter.put('/:id', async (request, response) => {
   try {
     const { name, description, size, price, sku } = request.body;
     const { id } = request.params;
@@ -93,7 +95,7 @@ productsRouter.put('/:id', ensureAuthenticated, async (request, response) => {
   }
 });
 
-productsRouter.delete('/:id', ensureAuthenticated, async (request, response) => {
+productsRouter.delete('/:id', async (request, response) => {
   try {
     let { id } = request.params;
 
