@@ -40,10 +40,10 @@ Aplicação desenvolvida para participar do processo seletivo da empresa Mestres
 {
     "name": "",
     "description": "",
-	"size": ,
+    "size": ,
     "price": ,
-	"quantity": ,
-	"sku":"",
+    "quantity": ,
+    "sku":"",
 }
 ```
 **PUT** /products/:id
@@ -51,9 +51,9 @@ Aplicação desenvolvida para participar do processo seletivo da empresa Mestres
 {
     "name": "",
     "description": "",
-	"size": ,
+    "size": ,
     "price": ,
-	"sku":"",
+    "sku":"",
 }
 ```
 
