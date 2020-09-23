@@ -3,7 +3,7 @@
 
 Aplicação desenvolvida para participar do processo seletivo da empresa Mestres da Web, o desafio consiste na criação do back-end de uma aplicação de gerenciamento de estoque para lojas de varejo.
 
-# Técnologias utilizadas
+# Tecnologias utilizadas
   - Node.JS
   - Typescript
   - Express
